@@ -1,0 +1,56 @@
+# ========================================
+# TOOL CONFIG
+# ========================================
+[python-bandit]
+SOURCE = "src"
+
+[python-piprot]
+REQUIREMENTS_FILES = [
+    "requirements.txt"
+]
+IGNORE_BELOW_SEVERITY = "low"
+
+[python-safety]
+REQUIREMENTS_FILES = [
+    "requirements.txt"
+]
+IGNORE_BELOW_SEVERITY = "medium"
+
+[semgrep]
+PRINT_TIMING_INFO = true
+CONFIGS = [
+    "p/ci",
+    "p/python",
+    "r/python"
+]
+EXCLUDE = [
+    "tests"
+]
+
+[trufflehog]
+SOURCE = "src/"
+
+[trufflehog.ci]
+INCLUDE_FULL_REASON = false
+
+# ========================================
+# REPORT CONFIG
+# ========================================
+[eze]
+CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
+CODEBASE_ID = "daea044e-4cf6-4fbc-8af8-440433dedc9f"
+
+# ========================================
+# SCAN CONFIG
+# ========================================
+[scan]
+tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety"]
+reporters = ["console", "json", "junit"]
+
+[scan.linux]
+tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "semgrep"]
+reporters = ["console", "json", "junit"]
+
+[scan.ci]
+tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
+reporters = ["console", "json", "junit", "eze"]

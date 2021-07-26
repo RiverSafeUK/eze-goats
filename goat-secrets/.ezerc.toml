@@ -1,0 +1,35 @@
+# ========================================
+# TOOL CONFIG
+# ========================================
+[trufflehog]
+SOURCE = "."
+EXCLUDE = [
+    "node_modules/.*",
+    "eze_report.json"
+
+]
+INCLUDE_FULL_REASON = true
+IGNORED_FILES= [
+    "package-lock.json"
+]
+
+[trufflehog.dontincludereason]
+INCLUDE_FULL_REASON = false
+
+# ========================================
+# REPORT CONFIG
+# ========================================
+[eze]
+CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
+CODEBASE_ID = "eeaff55e-6ac2-41e1-901d-e9adaf94dbc8"
+
+# ========================================
+# SCAN CONFIG
+# ========================================
+[scan]
+tools = ["trufflehog"]
+reporters = ["console", "json"]
+
+[scan.ci]
+tools = ["trufflehog:dontincludereason"]
+reporters = ["console", "json", "eze"]

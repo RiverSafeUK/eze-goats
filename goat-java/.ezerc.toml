@@ -1,0 +1,54 @@
+# ========================================
+# TOOL CONFIG
+# ========================================
+
+[semgrep]
+PRINT_TIMING_INFO = true
+CONFIGS = [
+    "p/ci",
+    "r/java",
+    "p/java",
+]
+EXCLUDE = [
+    "src/test/",
+    "target/",
+]
+
+[trufflehog]
+SOURCE = "src/"
+EXCLUDE = [
+    "src/test/",
+    "target/",
+]
+INCLUDE_FULL_REASON = true
+IGNORED_FILES= [
+    "pom.xml"
+]
+
+[trufflehog.ci]
+INCLUDE_FULL_REASON = false
+
+
+# ========================================
+
+# ========================================
+# REPORT CONFIG
+# ========================================
+[eze]
+CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
+CODEBASE_ID = "5532c50c-4d89-42e9-af21-ff136f206451"
+
+[console]
+PRINT_SUMMARY_ONLY = true
+
+# ========================================
+# SCAN CONFIG
+# ========================================
+[scan]
+tools = ["semgrep", "trufflehog", "java-cyclonedx", "java-dependencycheck"]
+reporters = ["console", "json"]
+
+
+[scan.ci]
+tools = ["semgrep", "trufflehog:ci", "java-cyclonedx", "java-dependencycheck"]
+reporters = ["console", "json", "eze"]
