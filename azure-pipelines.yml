@@ -35,7 +35,7 @@ steps:
 - script: |
     cd goat-java
     chmod +777 ./
-    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data:rw riversafe/eze-cli test -s ci --debug
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data riversafe/eze-cli test -s ci --debug
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Java Goat'
