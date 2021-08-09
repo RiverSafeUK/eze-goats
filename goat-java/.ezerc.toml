@@ -50,4 +50,4 @@ reporters = ["console", "json"]
 
 [scan.ci]
 tools = ["semgrep", "trufflehog:ci", "java-cyclonedx", "java-dependencycheck"]
-reporters = ["console", "json", "eze"]
+reporters = ["console", "eze"]

@@ -33,12 +33,12 @@ CODEBASE_ID = "584127a9-1900-49c4-97ce-95e61ba18048"
 # ========================================
 [scan]
 tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "node-cyclonedx"]
-reporters = ["console"]
+reporters = ["console", "json"]
 
 
 [scan.linux]
 tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
-reporters = ["console"]
+reporters = ["console", "json"]
 
 [scan.ci]
 tools = ["trufflehog:ci", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]

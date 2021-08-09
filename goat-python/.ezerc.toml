@@ -52,4 +52,4 @@ reporters = ["console", "json", "junit"]
 
 [scan.ci]
 tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
-reporters = ["console", "json", "junit", "eze"]
+reporters = ["console", "junit", "eze"]
