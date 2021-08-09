@@ -7,10 +7,8 @@
 PRINT_TIMING_INFO = true
 CONFIGS = [
     "p/ci",
-    "p/node",
-    "r/node",
+    "p/nodejs",
     "p/javascript",
-    "r/javascript"
 ]
 EXCLUDE = [
     "tests"
@@ -28,6 +26,7 @@ INCLUDE_FULL_REASON = false
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
 CODEBASE_ID = "584127a9-1900-49c4-97ce-95e61ba18048"
+
 
 # ========================================
 # SCAN CONFIG
