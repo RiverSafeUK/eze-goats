@@ -34,7 +34,7 @@ steps:
 
 - script: |
     cd goat-java
-    chmod  +600 ./
+    chmod  +660 ./
     docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
