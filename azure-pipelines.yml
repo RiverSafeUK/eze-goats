@@ -20,28 +20,28 @@ steps:
 
 - script: |
     cd goat-node
-    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Node Goat'
 
 - script: |
     cd goat-python
-    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Python Goat'
 
 - script: |
     cd goat-java
-    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Java Goat'
 
 - script: |
     cd goat-secrets
-    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Secrets Goat'
