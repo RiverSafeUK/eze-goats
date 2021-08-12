@@ -15,36 +15,43 @@ steps:
 
 # https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
 - script: |
-    cd scripts
-    chmod +x install-eze.sh
-    chmod +x run-eze.sh
-    ./install-eze.sh
-  displayName: 'Run eze test'
+    docker pull riversafe/eze-cli:latest
+  displayName: 'Pull eze docker'
+
+- script: |
+    chmod  o+rw goat-container
+    cd goat-container
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+  env:
+    EZE_APIKEY: $(EZE_APIKEY)
+  displayName: 'Run Eze against Container'
 
 - script: |
     cd goat-node
-    eze test -s ci --debug
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Node Goat'
 
 - script: |
     cd goat-python
-    eze test -s ci
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Python Goat'
 
+# The line of chmod... is to handle writing permissions running Docker in this pipeline.
 - script: |
+    chmod  o+rw goat-java
     cd goat-java
-    eze test -s ci
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Java Goat'
 
 - script: |
     cd goat-secrets
-    eze test -s ci
+    docker run --rm -e "EZE_APIKEY=$(EZE_APIKEY)" -e "BUILD_SOURCEBRANCHNAME=$(BUILD_SOURCEBRANCHNAME)" -e "BUILD_REPOSITORY_URI=$(BUILD_REPOSITORY_URI)" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Secrets Goat'

@@ -21,7 +21,6 @@ PRINT_TIMING_INFO = true
 CONFIGS = [
     "p/ci",
     "p/python",
-    "r/python"
 ]
 EXCLUDE = [
     "tests"
@@ -53,4 +52,4 @@ reporters = ["console", "json", "junit"]
 
 [scan.ci]
 tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
-reporters = ["console", "json", "junit", "eze"]
+reporters = ["console", "eze"]

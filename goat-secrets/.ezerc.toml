@@ -32,4 +32,4 @@ reporters = ["console", "json"]
 
 [scan.ci]
 tools = ["trufflehog:dontincludereason"]
-reporters = ["console", "json", "eze"]
+reporters = ["console", "eze"]

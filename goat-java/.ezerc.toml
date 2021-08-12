@@ -6,7 +6,6 @@
 PRINT_TIMING_INFO = true
 CONFIGS = [
     "p/ci",
-    "r/java",
     "p/java",
 ]
 EXCLUDE = [
@@ -51,4 +50,4 @@ reporters = ["console", "json"]
 
 [scan.ci]
 tools = ["semgrep", "trufflehog:ci", "java-cyclonedx", "java-dependencycheck"]
-reporters = ["console", "json", "eze"]
+reporters = ["console", "eze"]

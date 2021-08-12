@@ -64,4 +64,4 @@ reporters = ["console", "json", "bom"]
 
 [scan.ci]
 tools = ["container-trivy", "anchore-grype", "anchore-syft", "semgrep", "trufflehog:ci"]
-reporters = ["console", "json", "bom", "eze"]
+reporters = ["console", "bom", "eze"]
