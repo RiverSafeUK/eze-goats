@@ -35,7 +35,8 @@ INCLUDE_FULL_REASON = false
 # ========================================
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
-CODEBASE_ID = "5532c50c-4d89-42e9-af21-ff136f206451"
+CODEBASE_ID = "goat-java"
+CODEBRANCH_NAME = "main"
 
 [console]
 PRINT_SUMMARY_ONLY = true

@@ -37,7 +37,8 @@ INCLUDE_FULL_REASON = false
 # ========================================
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
-CODEBASE_ID = "daea044e-4cf6-4fbc-8af8-440433dedc9f"
+CODEBASE_ID = "goat-python"
+CODEBRANCH_NAME = "main"
 
 # ========================================
 # SCAN CONFIG

@@ -21,7 +21,8 @@ INCLUDE_FULL_REASON = false
 # ========================================
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
-CODEBASE_ID = "eeaff55e-6ac2-41e1-901d-e9adaf94dbc8"
+CODEBASE_ID = "goat-secrets"
+CODEBRANCH_NAME = "main"
 
 # ========================================
 # SCAN CONFIG
