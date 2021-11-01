@@ -25,7 +25,7 @@ CONFIGS = [
 REPORT_FILE = "reports/container/semgrep-report.json"
 
 [trufflehog]
-SOURCE = "Dockerfile"
+SOURCE = ["."]
 INCLUDE_FULL_REASON = true
 REPORT_FILE = "reports/container/trufflehog-report.json"
 
@@ -43,7 +43,7 @@ CODEBASE_ID = "goat-container"
 CODEBRANCH_NAME = "main"
 
 [console]
-PRINT_SUMMARY_ONLY = true
+PRINT_SUMMARY_ONLY = false
 
 [bom]
 REPORT_FILE = "reports/container/report-cyclonedx-sbom.json"
