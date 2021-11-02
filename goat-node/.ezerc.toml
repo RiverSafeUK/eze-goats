@@ -15,7 +15,11 @@ EXCLUDE = [
 ]
 
 [trufflehog]
-SOURCE = "src/"
+SOURCE = "."
+EXCLUDE = [
+    "node_modules",
+    "package-lock.json"
+]
 
 [trufflehog.ci]
 INCLUDE_FULL_REASON = false
@@ -23,6 +27,9 @@ INCLUDE_FULL_REASON = false
 # ========================================
 # REPORT CONFIG
 # ========================================
+[console]
+PRINT_SUMMARY_ONLY = false
+
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
 CODEBASE_ID = "goat-node"

@@ -16,8 +16,8 @@ EXCLUDE = [
 [trufflehog]
 SOURCE = "src/"
 EXCLUDE = [
-    "src/test/",
-    "target/",
+    "src/test",
+    "target",
 ]
 INCLUDE_FULL_REASON = true
 IGNORED_FILES= [

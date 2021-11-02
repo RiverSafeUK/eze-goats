@@ -35,9 +35,10 @@ INCLUDE_FULL_REASON = false
 # ========================================
 # REPORT CONFIG
 # ========================================
+[console]
+PRINT_SUMMARY_ONLY = false
+
 [eze]
-# TEST URL
-# https://develop.d1bhqr66c7fnbg.amplifyapp.com/codebranches/a83f2057-1ef8-4985-8d69-d5763ae6e9fa/main
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
 CODEBASE_ID = "goat-container"
 CODEBRANCH_NAME = "main"

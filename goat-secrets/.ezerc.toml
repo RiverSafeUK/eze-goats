@@ -4,7 +4,7 @@
 [trufflehog]
 SOURCE = "."
 EXCLUDE = [
-    "node_modules/.*",
+    "node_modules",
     "eze_report.json"
 
 ]
@@ -19,6 +19,9 @@ INCLUDE_FULL_REASON = false
 # ========================================
 # REPORT CONFIG
 # ========================================
+[console]
+PRINT_SUMMARY_ONLY = false
+
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
 CODEBASE_ID = "goat-secrets"
