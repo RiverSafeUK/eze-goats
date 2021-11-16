@@ -27,6 +27,7 @@ steps:
   displayName: 'Run Eze against Container'
 
 - script: |
+    chmod  o+rw goat-node
     cd goat-node
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
@@ -34,6 +35,7 @@ steps:
   displayName: 'Run Eze against Node Goat'
 
 - script: |
+    chmod  o+rw goat-python
     cd goat-python
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
@@ -50,6 +52,7 @@ steps:
   displayName: 'Run Eze against Java Goat'
 
 - script: |
+    chmod  o+rw goat-node
     cd goat-secrets
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
