@@ -43,9 +43,6 @@ CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/stagi
 CODEBASE_ID = "goat-container"
 CODEBRANCH_NAME = "main"
 
-[console]
-PRINT_SUMMARY_ONLY = false
-
 [bom]
 REPORT_FILE = "reports/container/report-cyclonedx-sbom.json"
 
