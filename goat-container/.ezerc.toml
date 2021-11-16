@@ -53,7 +53,7 @@ REPORT_FILE = "reports/container/eze_report.json"
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["anchore-grype", "anchore-syft", "trufflehog", "gitleaks"]
+tools = ["anchore-grype", "anchore-syft", "semgrep", "trufflehog", "gitleaks"]
 reporters = ["console", "json", "bom"]
 
 [scan.linux]

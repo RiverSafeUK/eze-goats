@@ -40,13 +40,9 @@ CODEBRANCH_NAME = "main"
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "node-cyclonedx"]
-reporters = ["console", "json"]
-
-
-[scan.linux]
 tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
 reporters = ["console", "json"]
+
 
 [scan.ci]
 tools = ["trufflehog:ci", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]

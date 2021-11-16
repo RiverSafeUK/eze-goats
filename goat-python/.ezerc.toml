@@ -47,10 +47,6 @@ CODEBRANCH_NAME = "main"
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety"]
-reporters = ["console", "json", "junit"]
-
-[scan.linux]
 tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "semgrep"]
 reporters = ["console", "json", "junit"]
 
