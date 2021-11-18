@@ -3,7 +3,7 @@
 # ========================================
 
 [semgrep]
-PRINT_TIMING_INFO = true
+PRINT_TIMING_INFO = false
 CONFIGS = [
     "p/ci",
     "p/java",
