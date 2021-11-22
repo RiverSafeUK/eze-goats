@@ -19,7 +19,7 @@ steps:
   displayName: 'Pull eze docker'
 
 - script: |
-    chmod  o+rw goat-container
+    chmod o+rw goat-container
     cd goat-container
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
@@ -28,7 +28,7 @@ steps:
 
 - script: |
     cd goat-node
-    chmod  o+rw insecure
+    chmod o+rw insecure
     cd insecure
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
@@ -37,7 +37,7 @@ steps:
 
 - script: |
     cd goat-node
-    chmod  o+rw damaged-package
+    chmod o+rw damaged-package
     cd damaged-package
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
@@ -45,24 +45,33 @@ steps:
   displayName: 'Run Eze against Node Goat: Damaged Package'
 
 - script: |
-    chmod  o+rw goat-python
+    chmod o+rw goat-python
     cd goat-python
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Python Goat'
 
-# The line of chmod... is to handle writing permissions running Docker in this pipeline.
 - script: |
-    chmod  o+rw goat-java
     cd goat-java
+    chmod o+rw insecure
+    cd insecure
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
-  displayName: 'Run Eze against Java Goat'
+  displayName: 'Run Eze against Java Goat: Insecure Pom'
 
 - script: |
-    chmod  o+rw goat-secrets
+    cd goat-java
+    chmod o+rw damaged-pom
+    cd damaged-pom
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+  env:
+    EZE_APIKEY: $(EZE_APIKEY)
+  displayName: 'Run Eze against Java Goat: Damaged Pom'
+
+- script: |
+    chmod o+rw goat-secrets
     cd goat-secrets
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:

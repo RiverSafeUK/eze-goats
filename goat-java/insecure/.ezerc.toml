@@ -39,7 +39,7 @@ CODEBASE_ID = "goat-java"
 CODEBRANCH_NAME = "main"
 
 [console]
-PRINT_SUMMARY_ONLY = true
+PRINT_SUMMARY_ONLY = false
 
 # ========================================
 # SCAN CONFIG
