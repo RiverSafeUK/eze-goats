@@ -41,7 +41,7 @@ CODEBRANCH_NAME = "main"
 # ========================================
 [scan]
 tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
-reporters = ["console", "json"]
+reporters = ["console", "json", "sarif"]
 
 
 [scan.ci]
