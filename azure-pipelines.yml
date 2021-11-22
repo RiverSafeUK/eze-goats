@@ -27,12 +27,22 @@ steps:
   displayName: 'Run Eze against Container'
 
 - script: |
-    chmod  o+rw goat-node
     cd goat-node
+    chmod  o+rw insecure
+    cd insecure
     docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
-  displayName: 'Run Eze against Node Goat'
+  displayName: 'Run Eze against Node Goat: Insecure Package'
+
+- script: |
+    cd goat-node
+    chmod  o+rw damaged-package
+    cd damaged-package
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+  env:
+    EZE_APIKEY: $(EZE_APIKEY)
+  displayName: 'Run Eze against Node Goat: Damaged Package'
 
 - script: |
     chmod  o+rw goat-python

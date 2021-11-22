@@ -4,10 +4,11 @@
 [node-npmaudit]
 
 [semgrep]
-PRINT_TIMING_INFO = true
+PRINT_TIMING_INFO = false
 CONFIGS = [
     "p/ci",
     "p/nodejs",
+    "p/nodejsscan",
     "p/javascript",
 ]
 EXCLUDE = [
@@ -32,7 +33,7 @@ PRINT_SUMMARY_ONLY = false
 
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
-CODEBASE_ID = "goat-node"
+CODEBASE_ID = "goat-node-damaged-package"
 CODEBRANCH_NAME = "main"
 
 

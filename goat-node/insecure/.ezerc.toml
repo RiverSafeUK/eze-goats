@@ -1,33 +1,25 @@
 # ========================================
 # TOOL CONFIG
 # ========================================
-[python-bandit]
-SOURCE = "src"
-
-[python-piprot]
-REQUIREMENTS_FILES = [
-    "requirements.txt"
-]
-IGNORE_BELOW_SEVERITY = "low"
-
-[python-safety]
-REQUIREMENTS_FILES = [
-    "requirements.txt"
-]
-IGNORE_BELOW_SEVERITY = "medium"
+[node-npmaudit]
 
 [semgrep]
 PRINT_TIMING_INFO = false
 CONFIGS = [
     "p/ci",
-    "p/python",
+    "p/nodejs",
+    "p/javascript",
 ]
 EXCLUDE = [
     "tests"
 ]
 
 [trufflehog]
-SOURCE = "src/"
+SOURCE = "."
+EXCLUDE = [
+    "node_modules",
+    "package-lock.json"
+]
 
 [trufflehog.ci]
 INCLUDE_FULL_REASON = false
@@ -40,16 +32,18 @@ PRINT_SUMMARY_ONLY = false
 
 [eze]
 CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
-CODEBASE_ID = "goat-python"
+CODEBASE_ID = "goat-node"
 CODEBRANCH_NAME = "main"
+
 
 # ========================================
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "semgrep"]
-reporters = ["console", "json", "junit"]
+tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
+reporters = ["console", "json", "sarif"]
+
 
 [scan.ci]
-tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
+tools = ["trufflehog:ci", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
 reporters = ["console", "eze"]
