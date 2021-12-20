@@ -1,0 +1,55 @@
+# ========================================
+# TOOL CONFIG
+# ========================================
+[python-bandit]
+SOURCE = "src"
+
+[python-piprot]
+REQUIREMENTS_FILES = [
+    "requirements.txt"
+]
+IGNORE_BELOW_SEVERITY = "low"
+
+[python-safety]
+REQUIREMENTS_FILES = [
+    "requirements.txt"
+]
+IGNORE_BELOW_SEVERITY = "medium"
+
+[semgrep]
+PRINT_TIMING_INFO = false
+CONFIGS = [
+    "p/ci",
+    "p/python",
+]
+EXCLUDE = [
+    "tests"
+]
+
+[trufflehog]
+SOURCE = "src/"
+
+[trufflehog.ci]
+INCLUDE_FULL_REASON = false
+
+# ========================================
+# REPORT CONFIG
+# ========================================
+[console]
+PRINT_SUMMARY_ONLY = false
+
+[eze]
+CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
+CODEBASE_ID = "goat-python-unpinned"
+CODEBRANCH_NAME = "main"
+
+# ========================================
+# SCAN CONFIG
+# ========================================
+[scan]
+tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "semgrep"]
+reporters = ["console", "json"]
+
+[scan.ci]
+tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
+reporters = ["console", "eze"]
