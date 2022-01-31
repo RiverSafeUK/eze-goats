@@ -31,7 +31,7 @@ INCLUDE_FULL_REASON = false
 PRINT_SUMMARY_ONLY = false
 
 [eze]
-CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
+CONSOLE_ENDPOINT = "https://7i41x6vk0a.execute-api.eu-west-2.amazonaws.com/development"
 CODEBASE_ID = "goat-node"
 CODEBRANCH_NAME = "main"
 

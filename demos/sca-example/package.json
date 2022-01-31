@@ -1,0 +1,11 @@
+{
+  "name": "eze-node-goat",
+  "private": true,
+  "version": "1.0.0",
+  "description": "https://libraries.io/search?licenses=GPL-3.0&platforms=NPM",
+  "main": "src/main.js",
+  "dependencies": {
+    "helmet": "^2.0.0"
+  },
+  "devDependencies": {}
+}

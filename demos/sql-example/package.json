@@ -1,0 +1,11 @@
+{
+  "name": "eze-node-goat",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Eze Node Goat",
+  "main": "src/main.js",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,1771 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "node-npmaudit",
+          "version": "unknown",
+          "fullName": "SCA:node-npmaudit",
+          "informationUri": "unknown",
+          "rules": [
+            {
+              "id": "b3a35bf3-c785-4723-a793-47e5950a2471",
+              "name": "helmet(0.3.0 - 3.20.1): has insecure dependency helmet-csp>connect",
+              "shortDescription": {
+                "text": ""
+              },
+              "fullDescription": {
+                "text": ". fix available via `npm audit fix --force`"
+              }
+            },
+            {
+              "id": "4ce89355-abcf-40d1-985c-39b787b5cfae",
+              "name": "helmet>helmet-csp(>=1.2.2 <2.9.1): Configuration Override in helmet-csp",
+              "shortDescription": {
+                "text": ""
+              },
+              "fullDescription": {
+                "text": ". fix available via `npm audit fix --force`"
+              }
+            },
+            {
+              "id": "5e759bbb-1c5d-4bb7-8aaa-02cfada87bd2",
+              "name": "connect>finalhandler(<=1.0.5): has insecure dependency debug",
+              "shortDescription": {
+                "text": ""
+              },
+              "fullDescription": {
+                "text": ". fix available via `npm audit fix --force`"
+              }
+            },
+            {
+              "id": "08470b32-a48c-424d-b620-c11210211618",
+              "name": "connect>finalhandler>debug(<2.6.9): Regular Expression Denial of Service in debug",
+              "shortDescription": {
+                "text": ""
+              },
+              "fullDescription": {
+                "text": ". fix available via `npm audit fix --force`"
+              }
+            },
+            {
+              "id": "8c80a3da-7c8b-4d30-ad2e-477130daa24d",
+              "name": "helmet>connect(2.11.1 - 3.6.4): has insecure dependency finalhandler>debug",
+              "shortDescription": {
+                "text": ""
+              },
+              "fullDescription": {
+                "text": ". fix available via `npm audit fix --force`"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "b3a35bf3-c785-4723-a793-47e5950a2471",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "fix available via `npm audit fix --force`"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "unknown"
+                },
+                "region": {
+                  "startLine": "unknown"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "4ce89355-abcf-40d1-985c-39b787b5cfae",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "fix available via `npm audit fix --force`"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "unknown"
+                },
+                "region": {
+                  "startLine": "unknown"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "5e759bbb-1c5d-4bb7-8aaa-02cfada87bd2",
+          "ruleIndex": 2,
+          "level": "note",
+          "message": {
+            "text": "fix available via `npm audit fix --force`"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "unknown"
+                },
+                "region": {
+                  "startLine": "unknown"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "08470b32-a48c-424d-b620-c11210211618",
+          "ruleIndex": 3,
+          "level": "note",
+          "message": {
+            "text": "fix available via `npm audit fix --force`"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "unknown"
+                },
+                "region": {
+                  "startLine": "unknown"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "8c80a3da-7c8b-4d30-ad2e-477130daa24d",
+          "ruleIndex": 4,
+          "level": "note",
+          "message": {
+            "text": "fix available via `npm audit fix --force`"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "unknown"
+                },
+                "region": {
+                  "startLine": "unknown"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "taxonomies": [],
+      "severity_counters": {
+        "high": 2,
+        "low": 3
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "node-npmoutdated",
+          "version": "unknown",
+          "fullName": "SCA:node-npmoutdated",
+          "informationUri": "unknown",
+          "rules": [
+            {
+              "id": "c4899de3-e25b-4db3-8aa6-d91aa5e0d145",
+              "name": "helmet",
+              "shortDescription": {
+                "text": ""
+              },
+              "fullDescription": {
+                "text": ". update helmet (2.3.0) to a newer version, current version is 3 major versions out of date. Latest is 5.0.2"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "c4899de3-e25b-4db3-8aa6-d91aa5e0d145",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "update helmet (2.3.0) to a newer version, current version is 3 major versions out of date. Latest is 5.0.2"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "unknown"
+                },
+                "region": {
+                  "startLine": "unknown"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "taxonomies": [],
+      "severity_counters": {
+        "medium": 1
+      }
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "semgrep",
+          "version": "unknown",
+          "fullName": "SAST:semgrep",
+          "informationUri": "unknown",
+          "rules": [
+            {
+              "id": "d9694fe7-2476-43d1-b2d7-fad06160240b",
+              "name": "node_modules/camelize/index.js: javascript.lang.security.audit.prototype-pollution.prototype-pollution-function.prototype-pollution-function",
+              "shortDescription": {
+                "text": "Possibility of prototype polluting function detected. By adding or modifying attributes of an object prototype, it is possible to create attributes that exist on every object, or replace critical attributes with malicious ones. This can be problematic if the software depends on existence or non-existence of certain attributes, or uses pre-defined attributes of object prototype (such as hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, using an object without prototypes (via Object.create(null) ), blocking modifications of attributes that resolve to object prototype, using Map instead of object."
+              },
+              "fullDescription": {
+                "text": "Possibility of prototype polluting function detected. By adding or modifying attributes of an object prototype, it is possible to create attributes that exist on every object, or replace critical attributes with malicious ones. This can be problematic if the software depends on existence or non-existence of certain attributes, or uses pre-defined attributes of object prototype (such as hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, using an object without prototypes (via Object.create(null) ), blocking modifications of attributes that resolve to object prototype, using Map instead of object.. Investigate 'node_modules/camelize/index.js' Line 12 for 'javascript.lang.security.audit.prototype-pollution.prototype-pollution-function.prototype-pollution-function' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "8472af72-7435-45d5-a328-b34d0f875aa5",
+              "name": "node_modules/connect/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through index++, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through index++, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/connect/index.js' Line 147 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "af28276b-7178-45c8-9461-df9afc7b16bf",
+              "name": "node_modules/connect/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through route.length, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through route.length, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/connect/index.js' Line 165 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "d9a7bd9b-7dff-4f66-a6aa-3977527f777e",
+              "name": "node_modules/connect/index.js: problem-based-packs.insecure-transport.js-node.using-http-server.using-http-server",
+              "shortDescription": {
+                "text": "Checks for any usage of http servers instead of https servers. Encourages the usage of https protocol instead of http, which does not have TLS and is therefore unencrypted. Using http can lead to man-in-the-middle attacks in which the attacker is able to read sensitive information."
+              },
+              "fullDescription": {
+                "text": "Checks for any usage of http servers instead of https servers. Encourages the usage of https protocol instead of http, which does not have TLS and is therefore unencrypted. Using http can lead to man-in-the-middle attacks in which the attacker is able to read sensitive information.. Investigate 'node_modules/connect/index.js' Line 216 for 'problem-based-packs.insecure-transport.js-node.using-http-server.using-http-server' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "bb167ec5-e221-40c6-9cf1-48e9352b9be0",
+              "name": "node_modules/content-security-policy-builder/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through originalKey, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through originalKey, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/content-security-policy-builder/index.js' Line 16 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "a1a41924-407e-440c-960d-aa74c2b9177c",
+              "name": "node_modules/core-util-is/float.patch: ajinabraham.njsscan.error_disclosure.generic_error_disclosure",
+              "shortDescription": {
+                "text": "Error messages with stack traces may expose sensitive information about the application."
+              },
+              "fullDescription": {
+                "text": "Error messages with stack traces may expose sensitive information about the application.. Investigate 'node_modules/core-util-is/float.patch' Line 70 for 'ajinabraham.njsscan.error_disclosure.generic_error_disclosure' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "0b624d20-d9d0-463b-b084-cf9a7454ebfb",
+              "name": "node_modules/core-util-is/float.patch: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/core-util-is/float.patch' Line 38 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "71581760-b3a1-4ed8-8e0e-f21a78b9b847",
+              "name": "node_modules/core-util-is/float.patch: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through keys[i], which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through keys[i], which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/core-util-is/float.patch' Line 505 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "84494db2-9e9f-4c45-a5c6-b75cd2bebded",
+              "name": "node_modules/core-util-is/float.patch: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through styleType, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through styleType, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/core-util-is/float.patch' Line 171 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "8434973b-bfac-46ac-a8b0-da4e089c0b29",
+              "name": "node_modules/core-util-is/float.patch: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/core-util-is/float.patch' Line 90 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "9ffe7261-a30f-433d-8b8f-a78ab6c738c1",
+              "name": "node_modules/debug/debug.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through format, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through format, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/debug/debug.js' Line 101 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "941d81e5-e962-4faf-aa64-c69cb4b88378",
+              "name": "node_modules/debug/debug.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/debug/debug.js' Line 146 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "ec634308-1224-42a3-91ea-f3ea169e49a5",
+              "name": "node_modules/debug/debug.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/debug/debug.js' Line 148 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "7406b1f2-0334-4394-8539-bee650b14260",
+              "name": "node_modules/depd/index.js: javascript.lang.security.detect-eval-with-expression.detect-eval-with-expression",
+              "shortDescription": {
+                "text": "Detected eval(variable), which could allow a malicious actor to run arbitrary code."
+              },
+              "fullDescription": {
+                "text": "Detected eval(variable), which could allow a malicious actor to run arbitrary code.. Investigate 'node_modules/depd/index.js' Line 409 for 'javascript.lang.security.detect-eval-with-expression.detect-eval-with-expression' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "5a5078f3-f08b-4f50-92f2-25145a093379",
+              "name": "node_modules/ee-first/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/ee-first/index.js' Line 31 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "10fa9d89-f9ec-45fd-8d4a-794ba9ebeef6",
+              "name": "node_modules/ee-first/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/ee-first/index.js' Line 61 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "073c552b-ff84-45cc-9cc7-4f9700df841d",
+              "name": "node_modules/ee-first/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/ee-first/index.js' Line 90 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "d730346f-395a-460f-a631-2f8ff7f4583b",
+              "name": "node_modules/ee-first/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through j, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through j, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/ee-first/index.js' Line 39 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "f358789b-5126-48a8-b9b6-8ceccb0c51e5",
+              "name": "node_modules/helmet-csp/lib/assign.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/helmet-csp/lib/assign.js' Line 5 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "12eb30ae-b1e9-4828-8155-5ad93d658a17",
+              "name": "node_modules/helmet-csp/lib/assign.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/helmet-csp/lib/assign.js' Line 8 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "a1ad5ac8-763c-42ca-ae20-10a519c07400",
+              "name": "node_modules/helmet-csp/lib/contains-function.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/helmet-csp/lib/contains-function.js' Line 7 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "b49e923e-0454-473d-b07d-aae76fc7d19a",
+              "name": "node_modules/helmet-csp/lib/get-header-keys-for-browser.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through browser.name, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through browser.name, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/helmet-csp/lib/get-header-keys-for-browser.js' Line 105 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "f3f09dd5-b47a-454c-a4a2-ab6074ee8346",
+              "name": "node_modules/helmet-csp/lib/transform-directives-for-browser.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through browser.name, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through browser.name, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/helmet-csp/lib/transform-directives-for-browser.js' Line 84 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "d3651e29-7619-4b79-b7c1-3d66bd04d4ac",
+              "name": "node_modules/helmet/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through middlewareName, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through middlewareName, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/helmet/index.js' Line 12 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "37e69964-9c32-491c-b539-4ab32b7a040e",
+              "name": "node_modules/helmet/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through middlewareName, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through middlewareName, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/helmet/index.js' Line 13 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "9815a1bd-0851-413d-91e1-7d63b7218b70",
+              "name": "node_modules/lodash.reduce/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through ++index, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through ++index, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/lodash.reduce/index.js' Line 141 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "c45e8245-74e5-47e4-b1d8-cd73bc58321e",
+              "name": "node_modules/lodash.reduce/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through fromRight ? length : ++index, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through fromRight ? length : ++index, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/lodash.reduce/index.js' Line 1262 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "08732af2-ba05-4941-84b3-2de63e85a770",
+              "name": "node_modules/lodash.reduce/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/lodash.reduce/index.js' Line 434 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "84ccf2ca-a163-47da-9872-b4511d2db310",
+              "name": "node_modules/lodash.reduce/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through toKey(path[index++]), which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through toKey(path[index++]), which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/lodash.reduce/index.js' Line 893 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "3f9e05a6-ea07-4251-bca9-31f569149fad",
+              "name": "node_modules/lodash.reduce/index.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/lodash.reduce/index.js' Line 344 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "a24e2763-e463-4ff6-bd49-44f58f580400",
+              "name": "node_modules/lodash.reduce/index.js: javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop",
+              "shortDescription": {
+                "text": "Possibility of prototype polluting function detected. By adding or modifying attributes of an object prototype, it is possible to create attributes that exist on every object, or replace critical attributes with malicious ones. This can be problematic if the software depends on existence or non-existence of certain attributes, or uses pre-defined attributes of object prototype (such as hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, using an object without prototypes (via Object.create(null) ), blocking modifications of attributes that resolve to object prototype, using Map instead of object."
+              },
+              "fullDescription": {
+                "text": "Possibility of prototype polluting function detected. By adding or modifying attributes of an object prototype, it is possible to create attributes that exist on every object, or replace critical attributes with malicious ones. This can be problematic if the software depends on existence or non-existence of certain attributes, or uses pre-defined attributes of object prototype (such as hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, using an object without prototypes (via Object.create(null) ), blocking modifications of attributes that resolve to object prototype, using Map instead of object.. Investigate 'node_modules/lodash.reduce/index.js' Line 893 for 'javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "3a02b6ab-e56b-4594-80bf-a44732311826",
+              "name": "node_modules/lodash.reduce/index.js: javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop",
+              "shortDescription": {
+                "text": "Possibility of prototype polluting function detected. By adding or modifying attributes of an object prototype, it is possible to create attributes that exist on every object, or replace critical attributes with malicious ones. This can be problematic if the software depends on existence or non-existence of certain attributes, or uses pre-defined attributes of object prototype (such as hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, using an object without prototypes (via Object.create(null) ), blocking modifications of attributes that resolve to object prototype, using Map instead of object."
+              },
+              "fullDescription": {
+                "text": "Possibility of prototype polluting function detected. By adding or modifying attributes of an object prototype, it is possible to create attributes that exist on every object, or replace critical attributes with malicious ones. This can be problematic if the software depends on existence or non-existence of certain attributes, or uses pre-defined attributes of object prototype (such as hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, using an object without prototypes (via Object.create(null) ), blocking modifications of attributes that resolve to object prototype, using Map instead of object.. Investigate 'node_modules/lodash.reduce/index.js' Line 1630 for 'javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "c3143798-692a-4a06-8718-ccf891d519a6",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through layout.length - 1, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through layout.length - 1, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/platform/platform.js' Line 932 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "83034265-4d8d-44cd-a6a8-fce4f71c0f25",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 104 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "aa4fb6cb-20be-4391-923c-95599dbe51c7",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 483 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "c24f7479-61bd-4a12-be83-7888fb3b25f5",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 502 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "132c4991-7180-4080-81bb-a72c448219de",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 516 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "7416dcb4-04da-49ba-b2cc-a400237b0a84",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 533 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "c03f46df-b737-461e-998a-193f7fc01028",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 552 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "e8596b04-219b-4ca9-96c3-bcc183cbe407",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 553 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "bf0baa99-cf8a-4c96-9595-c1fff0ad84a9",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 556 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "09d6d27d-c310-4d3e-b162-8307a1a8d874",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 562 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "5f49f6e3-e871-47ba-aff2-38a1ab7368a2",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 563 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "f181812a-6a11-410c-a524-93dac1505124",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 564 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "8ff93a27-a852-4f80-a73e-9e2d3156695c",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 579 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "f5df86de-07b0-4915-93a4-c73e241bfae6",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 771 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "726c884a-e1ab-47d6-823c-767e4cf5aa67",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 811 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "0e521b45-c7db-4e2b-a464-3953158bb85b",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 907 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "47f53b7c-7f1c-4460-94ce-9115fda250e0",
+              "name": "node_modules/platform/platform.js: javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+              "shortDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression."
+              },
+              "fullDescription": {
+                "text": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.. Investigate 'node_modules/platform/platform.js' Line 964 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "0eaf94bc-936e-49aa-bcd8-232af3d30d16",
+              "name": "node_modules/unpipe/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through i, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/unpipe/index.js' Line 60 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            },
+            {
+              "id": "0b8f32a8-cb58-4478-919b-a5e21dab70cf",
+              "name": "node_modules/utils-merge/index.js: javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection",
+              "shortDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input."
+              },
+              "fullDescription": {
+                "text": "Detected user input used in bracket notation accessor. This could lead to object injection through key, which could grant access to every property available in the object and therefore sensitive information. Instead, avoid the use of user input in property name fields or create a whitelist of allowed input.. Investigate 'node_modules/utils-merge/index.js' Line 19 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "d9694fe7-2476-43d1-b2d7-fad06160240b",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/camelize/index.js' Line 12 for 'javascript.lang.security.audit.prototype-pollution.prototype-pollution-function.prototype-pollution-function' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/camelize/index.js"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "8472af72-7435-45d5-a328-b34d0f875aa5",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/connect/index.js' Line 147 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/connect/index.js"
+                },
+                "region": {
+                  "startLine": 147
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "af28276b-7178-45c8-9461-df9afc7b16bf",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/connect/index.js' Line 165 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/connect/index.js"
+                },
+                "region": {
+                  "startLine": 165
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "d9a7bd9b-7dff-4f66-a6aa-3977527f777e",
+          "ruleIndex": 3,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/connect/index.js' Line 216 for 'problem-based-packs.insecure-transport.js-node.using-http-server.using-http-server' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/connect/index.js"
+                },
+                "region": {
+                  "startLine": 216
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "bb167ec5-e221-40c6-9cf1-48e9352b9be0",
+          "ruleIndex": 4,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/content-security-policy-builder/index.js' Line 16 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/content-security-policy-builder/index.js"
+                },
+                "region": {
+                  "startLine": 16
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "a1a41924-407e-440c-960d-aa74c2b9177c",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/core-util-is/float.patch' Line 70 for 'ajinabraham.njsscan.error_disclosure.generic_error_disclosure' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/core-util-is/float.patch"
+                },
+                "region": {
+                  "startLine": 70
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0b624d20-d9d0-463b-b084-cf9a7454ebfb",
+          "ruleIndex": 6,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/core-util-is/float.patch' Line 38 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/core-util-is/float.patch"
+                },
+                "region": {
+                  "startLine": 38
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "71581760-b3a1-4ed8-8e0e-f21a78b9b847",
+          "ruleIndex": 7,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/core-util-is/float.patch' Line 505 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/core-util-is/float.patch"
+                },
+                "region": {
+                  "startLine": 505
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "84494db2-9e9f-4c45-a5c6-b75cd2bebded",
+          "ruleIndex": 8,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/core-util-is/float.patch' Line 171 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/core-util-is/float.patch"
+                },
+                "region": {
+                  "startLine": 171
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "8434973b-bfac-46ac-a8b0-da4e089c0b29",
+          "ruleIndex": 9,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/core-util-is/float.patch' Line 90 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/core-util-is/float.patch"
+                },
+                "region": {
+                  "startLine": 90
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "9ffe7261-a30f-433d-8b8f-a78ab6c738c1",
+          "ruleIndex": 10,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/debug/debug.js' Line 101 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/debug/debug.js"
+                },
+                "region": {
+                  "startLine": 101
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "941d81e5-e962-4faf-aa64-c69cb4b88378",
+          "ruleIndex": 11,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/debug/debug.js' Line 146 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/debug/debug.js"
+                },
+                "region": {
+                  "startLine": 146
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "ec634308-1224-42a3-91ea-f3ea169e49a5",
+          "ruleIndex": 12,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/debug/debug.js' Line 148 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/debug/debug.js"
+                },
+                "region": {
+                  "startLine": 148
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "7406b1f2-0334-4394-8539-bee650b14260",
+          "ruleIndex": 13,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/depd/index.js' Line 409 for 'javascript.lang.security.detect-eval-with-expression.detect-eval-with-expression' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/depd/index.js"
+                },
+                "region": {
+                  "startLine": 409
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "5a5078f3-f08b-4f50-92f2-25145a093379",
+          "ruleIndex": 14,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/ee-first/index.js' Line 31 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/ee-first/index.js"
+                },
+                "region": {
+                  "startLine": 31
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "10fa9d89-f9ec-45fd-8d4a-794ba9ebeef6",
+          "ruleIndex": 15,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/ee-first/index.js' Line 61 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/ee-first/index.js"
+                },
+                "region": {
+                  "startLine": 61
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "073c552b-ff84-45cc-9cc7-4f9700df841d",
+          "ruleIndex": 16,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/ee-first/index.js' Line 90 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/ee-first/index.js"
+                },
+                "region": {
+                  "startLine": 90
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "d730346f-395a-460f-a631-2f8ff7f4583b",
+          "ruleIndex": 17,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/ee-first/index.js' Line 39 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/ee-first/index.js"
+                },
+                "region": {
+                  "startLine": 39
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "f358789b-5126-48a8-b9b6-8ceccb0c51e5",
+          "ruleIndex": 18,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/helmet-csp/lib/assign.js' Line 5 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/helmet-csp/lib/assign.js"
+                },
+                "region": {
+                  "startLine": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "12eb30ae-b1e9-4828-8155-5ad93d658a17",
+          "ruleIndex": 19,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/helmet-csp/lib/assign.js' Line 8 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/helmet-csp/lib/assign.js"
+                },
+                "region": {
+                  "startLine": 8
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "a1ad5ac8-763c-42ca-ae20-10a519c07400",
+          "ruleIndex": 20,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/helmet-csp/lib/contains-function.js' Line 7 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/helmet-csp/lib/contains-function.js"
+                },
+                "region": {
+                  "startLine": 7
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "b49e923e-0454-473d-b07d-aae76fc7d19a",
+          "ruleIndex": 21,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/helmet-csp/lib/get-header-keys-for-browser.js' Line 105 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/helmet-csp/lib/get-header-keys-for-browser.js"
+                },
+                "region": {
+                  "startLine": 105
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "f3f09dd5-b47a-454c-a4a2-ab6074ee8346",
+          "ruleIndex": 22,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/helmet-csp/lib/transform-directives-for-browser.js' Line 84 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/helmet-csp/lib/transform-directives-for-browser.js"
+                },
+                "region": {
+                  "startLine": 84
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "d3651e29-7619-4b79-b7c1-3d66bd04d4ac",
+          "ruleIndex": 23,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/helmet/index.js' Line 12 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/helmet/index.js"
+                },
+                "region": {
+                  "startLine": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "37e69964-9c32-491c-b539-4ab32b7a040e",
+          "ruleIndex": 24,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/helmet/index.js' Line 13 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/helmet/index.js"
+                },
+                "region": {
+                  "startLine": 13
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "9815a1bd-0851-413d-91e1-7d63b7218b70",
+          "ruleIndex": 25,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/lodash.reduce/index.js' Line 141 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/lodash.reduce/index.js"
+                },
+                "region": {
+                  "startLine": 141
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "c45e8245-74e5-47e4-b1d8-cd73bc58321e",
+          "ruleIndex": 26,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/lodash.reduce/index.js' Line 1262 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/lodash.reduce/index.js"
+                },
+                "region": {
+                  "startLine": 1262
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "08732af2-ba05-4941-84b3-2de63e85a770",
+          "ruleIndex": 27,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/lodash.reduce/index.js' Line 434 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/lodash.reduce/index.js"
+                },
+                "region": {
+                  "startLine": 434
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "84ccf2ca-a163-47da-9872-b4511d2db310",
+          "ruleIndex": 28,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/lodash.reduce/index.js' Line 893 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/lodash.reduce/index.js"
+                },
+                "region": {
+                  "startLine": 893
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3f9e05a6-ea07-4251-bca9-31f569149fad",
+          "ruleIndex": 29,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/lodash.reduce/index.js' Line 344 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/lodash.reduce/index.js"
+                },
+                "region": {
+                  "startLine": 344
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "a24e2763-e463-4ff6-bd49-44f58f580400",
+          "ruleIndex": 30,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/lodash.reduce/index.js' Line 893 for 'javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/lodash.reduce/index.js"
+                },
+                "region": {
+                  "startLine": 893
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "3a02b6ab-e56b-4594-80bf-a44732311826",
+          "ruleIndex": 31,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/lodash.reduce/index.js' Line 1630 for 'javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/lodash.reduce/index.js"
+                },
+                "region": {
+                  "startLine": 1630
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "c3143798-692a-4a06-8718-ccf891d519a6",
+          "ruleIndex": 32,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 932 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 932
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "83034265-4d8d-44cd-a6a8-fce4f71c0f25",
+          "ruleIndex": 33,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 104 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 104
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "aa4fb6cb-20be-4391-923c-95599dbe51c7",
+          "ruleIndex": 34,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 483 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 483
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "c24f7479-61bd-4a12-be83-7888fb3b25f5",
+          "ruleIndex": 35,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 502 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 502
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "132c4991-7180-4080-81bb-a72c448219de",
+          "ruleIndex": 36,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 516 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 516
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "7416dcb4-04da-49ba-b2cc-a400237b0a84",
+          "ruleIndex": 37,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 533 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 533
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "c03f46df-b737-461e-998a-193f7fc01028",
+          "ruleIndex": 38,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 552 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 552
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "e8596b04-219b-4ca9-96c3-bcc183cbe407",
+          "ruleIndex": 39,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 553 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 553
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "bf0baa99-cf8a-4c96-9595-c1fff0ad84a9",
+          "ruleIndex": 40,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 556 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 556
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "09d6d27d-c310-4d3e-b162-8307a1a8d874",
+          "ruleIndex": 41,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 562 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 562
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "5f49f6e3-e871-47ba-aff2-38a1ab7368a2",
+          "ruleIndex": 42,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 563 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 563
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "f181812a-6a11-410c-a524-93dac1505124",
+          "ruleIndex": 43,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 564 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 564
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "8ff93a27-a852-4f80-a73e-9e2d3156695c",
+          "ruleIndex": 44,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 579 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 579
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "f5df86de-07b0-4915-93a4-c73e241bfae6",
+          "ruleIndex": 45,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 771 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 771
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "726c884a-e1ab-47d6-823c-767e4cf5aa67",
+          "ruleIndex": 46,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 811 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 811
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0e521b45-c7db-4e2b-a464-3953158bb85b",
+          "ruleIndex": 47,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 907 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 907
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "47f53b7c-7f1c-4460-94ce-9115fda250e0",
+          "ruleIndex": 48,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/platform/platform.js' Line 964 for 'javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/platform/platform.js"
+                },
+                "region": {
+                  "startLine": 964
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0eaf94bc-936e-49aa-bcd8-232af3d30d16",
+          "ruleIndex": 49,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/unpipe/index.js' Line 60 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/unpipe/index.js"
+                },
+                "region": {
+                  "startLine": 60
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0b8f32a8-cb58-4478-919b-a5e21dab70cf",
+          "ruleIndex": 50,
+          "level": "error",
+          "message": {
+            "text": "Investigate 'node_modules/utils-merge/index.js' Line 19 for 'javascript.lang.security.audit.detect-bracket-object-injection.detect-bracket-object-injection' strings, use '# nosemgrep' if false positive"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "node_modules/utils-merge/index.js"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "taxonomies": [],
+      "severity_counters": {
+        "medium": 51
+      }
+    }
+  ]
+}
