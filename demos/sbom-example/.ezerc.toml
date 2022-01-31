@@ -8,7 +8,6 @@ PRINT_TIMING_INFO = false
 CONFIGS = [
     "p/ci",
     "p/nodejs",
-    "p/nodejsscan",
     "p/javascript",
 ]
 EXCLUDE = [
@@ -31,20 +30,11 @@ INCLUDE_FULL_REASON = false
 [console]
 PRINT_SUMMARY_ONLY = false
 
-[eze]
-CONSOLE_ENDPOINT = "https://7i41x6vk0a.execute-api.eu-west-2.amazonaws.com/development"
-CODEBASE_ID = "goat-node-damaged-package"
-CODEBRANCH_NAME = "main"
-
-
 # ========================================
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
+tools = ["node-cyclonedx"]
+#tools = ["trufflehog", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
 reporters = ["console", "json", "sarif"]
 
-
-[scan.ci]
-tools = ["trufflehog:ci", "node-npmaudit", "node-npmoutdated", "semgrep", "node-cyclonedx"]
-reporters = ["console", "eze"]

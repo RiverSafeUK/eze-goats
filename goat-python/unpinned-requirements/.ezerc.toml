@@ -39,7 +39,7 @@ INCLUDE_FULL_REASON = false
 PRINT_SUMMARY_ONLY = false
 
 [eze]
-CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/staging"
+CONSOLE_ENDPOINT = "https://7i41x6vk0a.execute-api.eu-west-2.amazonaws.com/development"
 CODEBASE_ID = "goat-python-unpinned"
 CODEBRANCH_NAME = "main"
 
@@ -47,9 +47,10 @@ CODEBRANCH_NAME = "main"
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "semgrep"]
+tools = ["python-cyclonedx"]
+#tools = ["trufflehog", "semgrep", "python-bandit", "python-safety", "python-piprot", "python-cyclonedx"]
 reporters = ["console", "json"]
 
 [scan.ci]
-tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
+tools = ["trufflehog:ci", "semgrep", "python-bandit", "python-safety", "python-piprot", "python-cyclonedx"]
 reporters = ["console", "eze"]
