@@ -35,6 +35,8 @@ CONSOLE_ENDPOINT = "https://7i41x6vk0a.execute-api.eu-west-2.amazonaws.com/devel
 CODEBASE_ID = "goat-node"
 CODEBRANCH_NAME = "main"
 
+[sarif]
+REPORT_FILE = "reports/container/eze_report.sarif"
 
 # ========================================
 # SCAN CONFIG

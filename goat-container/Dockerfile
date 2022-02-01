@@ -10,6 +10,9 @@ FROM python:3.8-slim-buster
 # ROOT USER ANTI PATTERN
 USER root
 
+# EXPOSING PASSWORD ANTI PATTERN
+ENV user_pass=some_value
+
 # MULTI ENTRYPOINT ANTI PATTERN
 ENTRYPOINT ["ls"]
 ENTRYPOINT ["echo", "hello"]

@@ -2,7 +2,7 @@
 # TOOL CONFIG
 # ========================================
 [trufflehog]
-SOURCE = "."
+SOURCE = ["."]
 EXCLUDE = [
     "node_modules",
     "eze_report.json"

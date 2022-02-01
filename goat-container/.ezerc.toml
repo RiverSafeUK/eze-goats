@@ -7,7 +7,7 @@ REPORT_FILE = "reports/container/syft-report-sbom.json"
 INTERMEDIATE_FILE = "reports/container/syft-report-sbom.xml"
 
 [container-trivy]
-IMAGE_FILE = "python:3.8-slim"
+IMAGE_NAME = "python:3.8-slim"
 REPORT_FILE = "reports/container/trivy-report.json"
 
 [anchore-grype]
@@ -32,6 +32,10 @@ REPORT_FILE = "reports/container/trufflehog-report.json"
 [trufflehog.ci]
 INCLUDE_FULL_REASON = false
 
+[kics]
+SOURCE = "Dockerfile"
+REPORT_FILE = "reports/container/kics-report.json"
+
 # ========================================
 # REPORT CONFIG
 # ========================================
@@ -53,7 +57,7 @@ REPORT_FILE = "reports/container/eze_report.json"
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["anchore-grype", "anchore-syft", "semgrep", "trufflehog", "gitleaks"]
+tools = ["anchore-grype", "anchore-syft", "semgrep", "trufflehog", "gitleaks", "kics"]
 reporters = ["console", "json", "bom"]
 
 [scan.linux]
