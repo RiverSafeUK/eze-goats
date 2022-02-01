@@ -39,7 +39,7 @@ INCLUDE_FULL_REASON = false
 PRINT_SUMMARY_ONLY = false
 
 [eze]
-CONSOLE_ENDPOINT = "https://7i41x6vk0a.execute-api.eu-west-2.amazonaws.com/development"
+CONSOLE_ENDPOINT = "https://aio7y6esb7.execute-api.eu-west-2.amazonaws.com/development"
 CODEBASE_ID = "goat-python-unpinned"
 CODEBRANCH_NAME = "main"
 
