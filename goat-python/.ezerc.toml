@@ -43,17 +43,20 @@ CONSOLE_ENDPOINT = "https://lff3adj48f.execute-api.eu-west-2.amazonaws.com/stagi
 CODEBASE_ID = "goat-python"
 CODEBRANCH_NAME = "main"
 
-[json-s3]
+[s3]
 OBJECT_KEY = "uploaded20211218.json"
 AWS_ACCESS_KEY = "introduce_access_key_or_set_environmental_variable"
 AWS_SECRET_KEY = "introduce_secret_key_or_set_environmental_variable"
+
+[markdown]
+REPORT_FILE = "reports/eze-md.md"
 
 # ========================================
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "semgrep"]
-reporters = ["console", "junit", "json-s3"]
+tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "python-cyclonedx"]
+reporters = ["markdown"]
 
 [scan.ci]
 tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
