@@ -51,12 +51,15 @@ AWS_SECRET_KEY = "introduce_secret_key_or_set_environmental_variable"
 [markdown]
 REPORT_FILE = "reports/eze-md.md"
 
+[sarif]
+REPORT_FILE = "reports/eze-sarif.sarif"
+
 # ========================================
 # SCAN CONFIG
 # ========================================
 [scan]
 tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "python-cyclonedx"]
-reporters = ["markdown"]
+reporters = ["console", "markdown", "sarif"]
 
 [scan.ci]
 tools = ["trufflehog:ci", "python-piprot", "python-bandit", "python-safety", "semgrep"]
