@@ -19,18 +19,10 @@ steps:
   displayName: 'Pull eze docker'
 
 - script: |
-    chmod o+rw goat-container
-    cd goat-container
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci --debug
-  env:
-    EZE_APIKEY: $(EZE_APIKEY)
-  displayName: 'Run Eze against Container'
-
-- script: |
     cd goat-node
     chmod o+rw insecure
     cd insecure
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Node Goat: Insecure Package'
@@ -39,7 +31,7 @@ steps:
     cd goat-node
     chmod o+rw damaged-package
     cd damaged-package
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Node Goat: Damaged Package'
@@ -48,7 +40,7 @@ steps:
     cd goat-python
     chmod o+rw insecure
     cd insecure
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Python Goat: Insecure'
@@ -57,7 +49,7 @@ steps:
     cd goat-python
     chmod o+rw unpinned-requirements
     cd unpinned-requirements
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Python Goat: Unpinned Requirements'
@@ -66,7 +58,7 @@ steps:
     cd goat-java
     chmod o+rw insecure
     cd insecure
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Java Goat: Insecure Pom'
@@ -75,7 +67,7 @@ steps:
     cd goat-java
     chmod o+rw damaged-pom
     cd damaged-pom
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Java Goat: Damaged Pom'
@@ -83,7 +75,16 @@ steps:
 - script: |
     chmod o+rw goat-secrets
     cd goat-secrets
-    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
   env:
     EZE_APIKEY: $(EZE_APIKEY)
   displayName: 'Run Eze against Secrets Goat'
+
+- script: |
+    cd goat-container
+    chmod o+rw docker-insecure
+    cd docker-insecure
+    docker run --rm -e "EZE_APIKEY=$EZE_APIKEY" -e "BUILD_SOURCEBRANCHNAME=$BUILD_SOURCEBRANCHNAME" -e "BUILD_REPOSITORY_URI=$BUILD_REPOSITORY_URI" -e "SYSTEM_PULLREQUEST_SOURCEBRANCH=$SYSTEM_PULLREQUEST_SOURCEBRANCH" -v "$(pwd)":/data riversafe/eze-cli test -s ci
+  env:
+    EZE_APIKEY: $(EZE_APIKEY)
+  displayName: 'Run Eze against Docker Container Goat'
