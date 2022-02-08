@@ -15,7 +15,7 @@ steps:
 
 # https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
 - script: |
-    docker pull riversafe/eze-cli:latest
+    docker pull riversafe/eze-cli:latest --quiet
   displayName: 'Pull eze docker'
 
 - script: |
