@@ -3,6 +3,7 @@
 
 # Goat stuff
 node_modules
+.eze
 
 # Eze reports
 *_bom.json

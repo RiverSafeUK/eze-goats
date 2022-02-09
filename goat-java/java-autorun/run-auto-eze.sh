@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-docker run -t -v $(pwd -W):/data eze-cli test --force-autoscan
+mkdir -p .m2/
+docker run -t -v $(pwd -W):/data  -v $(pwd -W)/.m2/:/home/ezeuser/.m2/ eze-cli test --debug
