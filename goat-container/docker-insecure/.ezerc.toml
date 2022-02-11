@@ -30,8 +30,10 @@ INCLUDE_FULL_REASON = true
 REPORT_FILE = "reports/container/trufflehog-report.json"
 
 [kics]
-SOURCE = "Dockerfile"
-REPORT_FILE = "reports/container/kics-report.json"
+# Full List of Fields and Tool Help available "docker run riversafe/eze-cli tools help kics"
+WINDOWS_DOCKER_WORKAROUND = false
+EXCLUDE = []
+REPORT_FILE = ".eze/_checkmarx-kics.json"
 
 # ========================================
 # REPORT CONFIG
@@ -58,6 +60,6 @@ tools = ["container-trivy", "anchore-grype", "anchore-syft", "semgrep", "truffle
 reporters = ["console", "json", "bom"]
 
 [scan.ci]
-tools = ["container-trivy", "anchore-grype", "semgrep", "trufflehog"]
-# BUG AB-626: tools = ["container-trivy", "anchore-grype", "anchore-syft", "semgrep", "trufflehog"]
+tools = ["trufflehog","semgrep","kics"]
+# BUG AB-626 / AB-1000: tools = ["container-trivy", "anchore-grype", "anchore-syft", "semgrep", "trufflehog"]
 reporters = ["console", "bom", "eze"]
