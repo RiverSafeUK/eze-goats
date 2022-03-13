@@ -84,4 +84,4 @@ REPORT_FILE = ".eze/eze_report.md"
 # ========================================
 [scan]
 tools = ["trufflehog","semgrep","dotnet-cyclonedx"]
-reporters = ["console","bom","json","sarif","markdown"]
+reporters = ["console","bom","json","sarif","markdown", "html"]
