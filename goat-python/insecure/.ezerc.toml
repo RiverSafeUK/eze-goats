@@ -58,7 +58,7 @@ REPORT_FILE = "reports/eze-sarif.sarif"
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "python-cyclonedx"]
+tools = ["trufflehog", "python-piprot", "python-bandit", "python-safety", "python-cyclonedx", "trufflehog-v3"]
 reporters = ["console", "markdown", "sarif"]
 
 [scan.ci]
