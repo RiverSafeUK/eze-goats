@@ -26,6 +26,9 @@ EXCLUDE = [
     "tests"
 ]
 
+[trufflehog]
+SOURCE = "src/"
+
 [trufflehog.ci]
 INCLUDE_FULL_REASON = false
 
