@@ -29,7 +29,6 @@ DISABLE_DEFAULT_IGNORES = false
 NO_ENTROPY = false
 INCLUDE_FULL_REASON = true
 EXCLUDE = []
-REPORT_FILE = ".eze/_truffleHog-report.json"
 
 [semgrep]
 # Full List of Fields and Tool Help available "docker run riversafe/eze-cli tools help semgrep"
@@ -38,13 +37,11 @@ DISABLE_DEFAULT_IGNORES = false
 PRINT_TIMING_INFO = false
 WINDOWS_DOCKER_WORKAROUND = false
 EXCLUDE = []
-REPORT_FILE = ".eze/_semgrep-report.json"
 
 [kics]
 # Full List of Fields and Tool Help available "docker run riversafe/eze-cli tools help kics"
 WINDOWS_DOCKER_WORKAROUND = false
 EXCLUDE = []
-REPORT_FILE = ".eze/_checkmarx-kics.json"
 
 
 # ========================================
@@ -58,19 +55,15 @@ PRINT_IGNORED = false
 
 [bom]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help bom"
-REPORT_FILE = ".eze/eze_%PROJECT%_bom.json"
 
 [json]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help json"
-REPORT_FILE = ".eze/eze_report.json"
 
 [sarif]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help sarif"
-REPORT_FILE = ".eze/eze_report.sarif"
 
 [markdown]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help markdown"
-REPORT_FILE = ".eze/eze_report.md"
 
 
 # ========================================

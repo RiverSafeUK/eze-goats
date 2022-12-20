@@ -45,12 +45,13 @@ DISABLE_DEFAULT_IGNORES = false
 PRINT_TIMING_INFO = false
 EXCLUDE = []
 
-[java-cyclonedx]
-# Full List of Fields and Tool Help available "docker run riversafe/eze-cli tools help java-cyclonedx"
-SCA_ENABLED = true
+[python-cyclonedx]
+# Full List of Fields and Tool Help available "docker run riversafe/eze-cli tools help python-cyclonedx"
 
-[java-spotbugs]
-# Full List of Fields and Tool Help available "docker run riversafe/eze-cli tools help java-spotbugs"
+
+[python-bandit]
+# Full List of Fields and Tool Help available "docker run riversafe/eze-cli tools help python-bandit"
+
 
 
 # ========================================
@@ -66,31 +67,27 @@ PRINT_TRANSITIVE_PACKAGES = false
 [bom]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help bom"
 
+
 [json]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help json"
+
 
 [sarif]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help sarif"
 
+
 [markdown]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help markdown"
+
 
 [html]
 # Full List of Fields and Reporter Help available "docker run riversafe/eze-cli reporters help html"
 
-
-[eze]
-CONSOLE_ENDPOINT = "https://aio7y6esb7.execute-api.eu-west-2.amazonaws.com/development"
-CODEBASE_ID = "goat-java"
-CODEBRANCH_NAME = "main"
 
 
 # ========================================
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["trufflehog","semgrep","java-cyclonedx","java-spotbugs"]
+tools = ["trufflehog","semgrep","python-cyclonedx","python-bandit"]
 reporters = ["console","bom","json","sarif","markdown","html"]
-
-[scan.ci]
-reporters = ["console","bom","json","sarif","markdown","html","eze"]

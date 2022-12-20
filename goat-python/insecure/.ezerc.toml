@@ -49,10 +49,8 @@ AWS_ACCESS_KEY = "introduce_access_key_or_set_environmental_variable"
 AWS_SECRET_KEY = "introduce_secret_key_or_set_environmental_variable"
 
 [markdown]
-REPORT_FILE = "reports/eze-md.md"
 
 [sarif]
-REPORT_FILE = "reports/eze-sarif.sarif"
 
 # ========================================
 # SCAN CONFIG

@@ -36,7 +36,6 @@ CODEBASE_ID = "goat-node"
 CODEBRANCH_NAME = "main"
 
 [sarif]
-REPORT_FILE = "reports/container/eze_report.sarif"
 
 # ========================================
 # SCAN CONFIG
