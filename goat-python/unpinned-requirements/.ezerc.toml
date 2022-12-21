@@ -4,18 +4,6 @@
 [python-bandit]
 SOURCE = "src"
 
-[python-piprot]
-REQUIREMENTS_FILES = [
-    "requirements.txt"
-]
-IGNORE_BELOW_SEVERITY = "low"
-
-[python-safety]
-REQUIREMENTS_FILES = [
-    "requirements.txt"
-]
-IGNORE_BELOW_SEVERITY = "medium"
-
 [semgrep]
 PRINT_TIMING_INFO = false
 CONFIGS = [
@@ -47,10 +35,9 @@ CODEBRANCH_NAME = "main"
 # SCAN CONFIG
 # ========================================
 [scan]
-tools = ["python-cyclonedx"]
-#tools = ["trufflehog", "semgrep", "python-bandit", "python-safety", "python-piprot", "python-cyclonedx"]
+tools = ["trufflehog", "semgrep", "python-bandit", "python-cyclonedx"]
 reporters = ["console", "json"]
 
 [scan.ci]
-tools = ["trufflehog:ci", "semgrep", "python-bandit", "python-safety", "python-piprot", "python-cyclonedx"]
+tools = ["trufflehog:ci", "semgrep", "python-bandit", "python-cyclonedx"]
 reporters = ["console", "eze"]

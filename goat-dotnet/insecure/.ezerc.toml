@@ -78,3 +78,7 @@ PRINT_TRANSITIVE_PACKAGES = false
 [scan]
 tools = ["trufflehog","semgrep","dotnet-cyclonedx"]
 reporters = ["console","bom","json","sarif","markdown", "html"]
+
+[scan.cyclonedx]
+tools = ["dotnet-cyclonedx"]
+reporters = ["console","bom","json","sarif","markdown", "html"]

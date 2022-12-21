@@ -94,3 +94,7 @@ reporters = ["console","bom","json","sarif","markdown","html"]
 
 [scan.ci]
 reporters = ["console","bom","json","sarif","markdown","html","eze"]
+
+[scan.cyclonedx]
+tools = ["trufflehog","semgrep","java-cyclonedx"]
+reporters = ["console","bom","json","sarif","markdown","html"]
