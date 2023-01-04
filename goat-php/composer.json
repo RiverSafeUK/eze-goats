@@ -1,0 +1,8 @@
+{
+  "name": "eze/php-goat",
+  "version": "1.0.0",
+  "require": {
+    "monolog/monolog": "*",
+    "firebase/php-jwt": "v5.4.0"
+  }
+}

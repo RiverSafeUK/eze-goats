@@ -3,6 +3,7 @@
 
 # Goat stuff
 node_modules
+vendor
 .eze
 
 # Eze reports
